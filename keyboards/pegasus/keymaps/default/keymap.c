@@ -47,9 +47,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_LAYER1] = LAYOUT_BIG_SPACE(
-        KC_GRV,  KC_QUOT, _______, KC_UP,   _______, _______, _______, TD_P_M, KC_7, KC_8, KC_9,    KC_DEL,
-        KC_CAPS, _______, KC_LEFT, KC_DOWN, KC_RGHT, _______, _______, TD_M_D, KC_4, KC_5, KC_6,    KC_ENT,
-        KC_LSFT, KC_MINS, KC_EQL,  KC_LBRC, KC_RBRC, KC_BSLS, _______, _______, KC_1, KC_2, KC_3,    KC_RSFT,
+        KC_GRV,  KC_QUOT, _______, KC_UP,   _______, _______, _______, _______, KC_7, KC_8, KC_9,    KC_DEL,
+        KC_CAPS, _______, KC_LEFT, KC_DOWN, KC_RGHT, _______, KC_PSLS, KC_PMNS, KC_4, KC_5, KC_6,    KC_ENT,
+        KC_LSFT, KC_MINS, KC_EQL,  KC_LBRC, KC_RBRC, KC_BSLS, KC_PAST, KC_PPLS, KC_1, KC_2, KC_3,    KC_RSFT,
         _______, _______,                            _______,                         KC_0,          KC_PDOT
     ),
 
