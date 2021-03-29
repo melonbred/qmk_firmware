@@ -41,8 +41,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
  *
  */
-#define MATRIX_ROW_PINS { A10, A9, B15, B9 }
-#define MATRIX_COL_PINS { B2, B1, B0, A7, A6, A5, A4, A3, A2, A1, A0, B12, A13 }
+#define MATRIX_ROW_PINS { A13, B15, B14, B9 }
+#define MATRIX_COL_PINS { B11, B1, B0, A7, A6, A5, A4, A3, A2, A1, A0, A8, B12 }
 //#define UNUSED_PINS { B5, B7, B8, B9, C13, C15 }
 
 
@@ -61,8 +61,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 /* Rotary Encoder Definitions */
-#define ENCODERS_PAD_A { B13, B10, C15,C14 }
-#define ENCODERS_PAD_B { B14, B11, F0, C13 }
+#define ENCODERS_PAD_A { A9, B2, F0, C14 }
+#define ENCODERS_PAD_B { A10, B10, C15, C13 }
 
 
 /*RGB*/
