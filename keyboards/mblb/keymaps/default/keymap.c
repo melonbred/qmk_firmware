@@ -48,9 +48,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_LAYER1] = LAYOUT_default(
-        RGB_TOG, KC_GRV,  KC_QUOT, KC_SLSH, KC_UP,   _______, _______, _______, KC_7, KC_8, KC_9, TD_P_M, KC_DEL,
-        RGB_MOD, KC_CAPS, _______, KC_LEFT, KC_DOWN, KC_RGHT, _______, _______, KC_4, KC_5, KC_6, TD_M_D, KC_ENT,
-        RGB_VAI, KC_LSFT, KC_MINS, KC_EQL,  KC_LBRC, KC_RBRC, KC_BSLS, _______, KC_1, KC_2, KC_3,         KC_RSFT,
+        RGB_TOG, KC_GRV,  KC_QUOT, KC_SLSH, KC_UP,   _______, _______, _______, KC_7, KC_8, KC_9, KC_PSLS, KC_DEL,
+        RGB_MOD, KC_CAPS, _______, KC_LEFT, KC_DOWN, KC_RGHT, _______, KC_PMNS, KC_4, KC_5, KC_6, KC_PAST, KC_ENT,
+        RGB_VAI, KC_LSFT, KC_MINS, KC_EQL,  KC_LBRC, KC_RBRC, KC_BSLS, KC_PPLS, KC_1, KC_2, KC_3,         KC_RSFT,
         RGB_VAD, _______, KC_LGUI,                   _______,          KC_SPC,           KC_0,            KC_PDOT
     ),
 
@@ -67,16 +67,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 void encoder_update_user(uint8_t index, bool clockwise) {
     if (index == 0) { /* FIRST ENCODER */
         if (clockwise) {
-            tap_code(KC_VOLU);
+            tap_code(KC_PGDN);
         } else {
-            tap_code(KC_VOLD);
+            tap_code(KC_PGUP);
         }
     }
     else if (index == 1) { /* SECOND ENCODER */
         if (clockwise) {
-            tap_code(KC_PGDN);
+            tap_code(KC_VOLD);
         } else {
-            tap_code(KC_PGUP);
+            tap_code(KC_VOLU);
         }
     }
     else if (index == 2) { /* THIRD ENCODER */
