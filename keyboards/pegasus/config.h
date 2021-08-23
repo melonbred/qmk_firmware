@@ -61,10 +61,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 /* Rotary Encoder Definitions */
-#define ENCODERS_PAD_A { F0, F1 }
-#define ENCODERS_PAD_B { B13, B14 }
-#define ENCODERS_PAD_C { A9, A10 }
-#define ENCODERS_PAD_D { B15, A8 }
+#define ENCODERS_PAD_A { F0, B13, A9, B15 }
+#define ENCODERS_PAD_B { F1, B14, A10, A8 }
 
 /*
  * Feature disable options
